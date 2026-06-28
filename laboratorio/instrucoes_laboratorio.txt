@@ -1,0 +1,25 @@
+=====================================================================
+🔬 AMBIENTE DE TESTE PARA O KIT DE DEFESA (BLUE TEAM)
+=====================================================================
+
+Os scripts de defesa deste kit monitoram e protegem sistemas internamente. 
+Por motivos de segurança e performance, o ambiente ideal para testes é 
+uma Máquina Virtual (VM) isolada no seu próprio computador.
+
+---------------------------------------------------------------------
+💻 Como montar seu Laboratório de Defesa:
+---------------------------------------------------------------------
+
+1. Baixe um programa de virtualização gratuito:
+   -> Oracle VirtualBox (https://virtualbox.org)
+
+2. Baixe um sistema operacional pronto e vulnerável para simular os ataques:
+   -> Metasploitable 2 (https://sourceforge.net)
+
+3. Como rodar o teste:
+   - Inicie a máquina do Metasploitable no VirtualBox.
+   - Execute um ataque de força bruta contra ela (usando o kit pentest).
+   - Mova os arquivos de registros (logs) gerados para a pasta deste kit.
+   - Execute o 'analisador_logs.py' ou o 'bloqueador_firewall.py' para ver a defesa agindo e banindo os IPs maliciosos.
+
+=====================================================================
